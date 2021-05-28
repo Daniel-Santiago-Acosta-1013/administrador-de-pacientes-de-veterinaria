@@ -89,6 +89,7 @@ class UI {
                 <span class="font-weight-bolder">Sintomas: </span> ${sintomas}
             `;
             
+            // Boton para eliminar esta cita 
 
             // Agregar los parrafos al divCita
             divCita.appendChild(mascotaParrafo);
