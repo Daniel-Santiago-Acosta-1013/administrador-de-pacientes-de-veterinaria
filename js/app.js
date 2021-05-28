@@ -90,7 +90,9 @@ class UI {
             `;
                
             // Boton para eliminar esta cita
-            const btnElimar = document.createElement('button') 
+            const btnEliminar = document.createElement('button')
+            btnEliminar.classList.add('btn', 'btn-danger', 'mr-2')
+            btnEliminar.innerHTML = 'Eliminar <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>'; 
 
             // Agregar los parrafos al divCita
             divCita.appendChild(mascotaParrafo);
@@ -99,6 +101,7 @@ class UI {
             divCita.appendChild(fechaParrafo);
             divCita.appendChild(horaParrafo);
             divCita.appendChild(sintomasParrafo);
+            divCita.appendChild(btnEliminar);
             
 
             // Agregar citas al HTML 
