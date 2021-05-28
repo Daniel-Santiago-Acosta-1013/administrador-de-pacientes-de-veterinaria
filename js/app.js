@@ -88,8 +88,9 @@ class UI {
             sintomasParrafo.innerHTML = `
                 <span class="font-weight-bolder">Sintomas: </span> ${sintomas}
             `;
-            
-            // Boton para eliminar esta cita 
+               
+            // Boton para eliminar esta cita
+            const btnElimar = document.createElement('button') 
 
             // Agregar los parrafos al divCita
             divCita.appendChild(mascotaParrafo);
