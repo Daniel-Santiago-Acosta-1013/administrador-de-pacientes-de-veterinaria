@@ -94,6 +94,8 @@ class UI {
        
         this.limpiarHTML();
 
+        this.textHeading(citas);
+
         // Leer el contenido de la base de datos
         const objectStore = DB.transaction('citas').objectStore('citas');
         
@@ -159,6 +161,14 @@ class UI {
 
             }
         }
+   }
+
+   textHeading(citas) {
+       if(citas.length > 0) {
+           heading.textContent = 'Administrar citas'
+       } else {
+           heading.textContent = 'No hay citas, comienza creando una'
+       }
    }
 
    limpiarHTML() {
